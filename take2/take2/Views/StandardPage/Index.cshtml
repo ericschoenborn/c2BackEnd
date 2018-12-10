@@ -1,0 +1,67 @@
+@using take2
+@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@Model MyEpiServerSite.Model.Pages.Home
+
+<style>
+    #main {
+        width: 100%;
+        height: 200px;
+        background-image: url('bread.jpg');
+        background-size: 100% 200px;
+        background-repeat: no-repeat;
+        border: 1px solid red;
+        color: white;
+    }
+
+    .control {
+        width: 100%;
+        border: 1px solid green;
+        color: white;
+    }
+
+    span {
+        float: right;
+        font-weight: bold;
+        padding-right: 5px;
+    }
+</style>
+	</head>
+<body>
+
+
+    <div id="main">
+
+        <div class="control">
+            <b>Technology Blog</b>
+            <span onclick="location.href='contact.html';">Contact</span>
+            <span>Sample Post</span>
+            <span onclick="location.href='about.html';">About</span>
+            <span onclick="location.href='index.html';">Home</span>
+        </div>
+        <center>
+            <h1>Cool Stuff About Cool Things</h1>
+
+        </center>
+    </div>
+    <center>
+        <p>
+            Give some info and your message!<br />
+            <input type="txt" placeholder="Name"><br />
+            <input type="txt" placeholder="Email"><br />
+            <input type="txt" placeholder="Phone"><br />
+            <input type="txt" placeholder="Message"><br />
+        </p>
+        <footer style="color:grey;">
+            <image src="twit.png" width="25" height="25"></image><image src="face.png" width="25" height="25">
+                <image src="git.png" width="25" height="25">
+                    <br />
+                    Copyright &copy; Eric Schoenborn 2018
+        </footer>
+    </center>
+    <script>
+		//<img src="appleFrit.jpg" alt="Apple Fritter"></img>
+    </script>
+</body>
+</html>
